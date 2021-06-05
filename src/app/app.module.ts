@@ -15,6 +15,13 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TableComponent } from './table/table.component';
 
+// Firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
+import { environment } from 'src/environments/environment';
+
 @NgModule({
     declarations: [AppComponent, LayoutComponent, TableComponent],
     imports: [
@@ -26,6 +33,9 @@ import { TableComponent } from './table/table.component';
         MaterialModule,
         BrowserAnimationsModule,
         HttpClientModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
+        AngularFireStorageModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
