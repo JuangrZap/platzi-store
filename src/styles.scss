@@ -21,6 +21,12 @@ body {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px 20px;
+}
+.container-routes {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1110px;
 }
 
 @media (min-width: 576px) {

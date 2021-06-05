@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+}
+
+button,
+a {
+    min-width: 60px;
+    line-height: 28px;
+    margin-right: 10px;
+}
+
+.add-btn {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 40px;
+    transition: transform 0.1s ease-in;
+}
+
+.add-btn:active {
+    transform: scale(0.8);
+    transition: transform 0.2s ease;
+}
